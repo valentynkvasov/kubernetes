@@ -1,0 +1,37 @@
+apiVersion: v1
+entries:
+  reportportal:
+  - apiVersion: v1
+    appVersion: 5.3.5
+    created: "2021-05-24T13:25:11.457654+03:00"
+    dependencies:
+    - condition: postgresql.installdep.enable
+      name: postgresql
+      repository: https://charts.helm.sh/stable
+      version: 8.6.2
+    - condition: rabbitmq.installdep.enable
+      name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.5.6
+    - condition: elasticsearch.installdep.enable
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.6.1
+    - condition: minio.installdep.enable
+      name: minio
+      repository: https://charts.helm.sh/stable
+      version: 5.0.33
+    description: ReportPortal.io AI-powered Test Automation Dashboard
+    digest: 8f192deaebd4d525396e221a48faaf8292b030827ce2f4f24b86ab38342797d9
+    keywords:
+    - reportportal
+    maintainers:
+    - email: support@reportportal.io
+      name: reportportal
+    name: reportportal
+    sources:
+    - https://github.com/reportportal/k8s/reportportal
+    urls:
+    - reportportal-5.3.5.tgz
+    version: 5.3.5
+generated: "2021-05-24T13:25:11.448397+03:00"
