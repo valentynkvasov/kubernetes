@@ -13,8 +13,8 @@ rp_repo` to see the charts.
 
 To install the <chart-name> chart:
 
-    helm install my-reportportal rp_repo/reportportal
+    helm install myreportportal rp_repo/reportportal
 
 To uninstall the chart:
 
-    helm delete my-reportportal
+    helm delete myreportportal
