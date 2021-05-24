@@ -24,5 +24,4 @@ jobs:
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           CR_GIT_REPO: "kubernetes"
-          CR_PACKAGE_PATH: "./charts"
           CR_OWNER: "valentynkvasov"
