@@ -25,3 +25,6 @@ jobs:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           CR_GIT_REPO: "kubernetes"
           CR_OWNER: "valentynkvasov"
+        run: |
+          cr upload
+          cr index
