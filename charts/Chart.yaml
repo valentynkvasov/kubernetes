@@ -4,7 +4,7 @@ description: ReportPortal.io AI-powered Test Automation Dashboard
 name: reportportal
 version: 5.5.1
 sources:
-  - https://github.com/reportportal/kubernetes
+  - https://github.com/reportportal/k8s/kubernetes
 keywords:
   - reportportal
 maintainers:
