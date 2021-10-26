@@ -1,3 +1,4 @@
+{{- if and (le .Capabilities.KubeVersion.Major "1") (lt .Capabilities.KubeVersion.Minor "19") }}
 {{- if .Values.ingress.enable }}
 {{- $fullName := include "reportportal.fullname" . -}}
 apiVersion: extensions/v1beta1
@@ -59,4 +60,5 @@ spec:
 {{ end }}
 status:
   loadBalancer: {}
+{{- end }}
 {{- end }}
